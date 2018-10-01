@@ -26,11 +26,15 @@ app.use((req, res, next) => {
     next(err);
 });
 
+/* add if statement to check if err occurs */
 app.use((err, req, res, next) => {
-    res.locals.error = err;
-    res.status(err.status);
-    res.render('error',{error:err});
-    next(err);
+    if (err){
+        res.locals.error = err;
+        res.status(err.status);
+        res.render('error',{error:err});
+        next(err);
+    }
+
 });
 
 app.listen(3000, ()=>{
