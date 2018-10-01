@@ -5,7 +5,7 @@ Portfolio website built with Node.js and Express
 
   - This project is created for the purpose of JavaScript Full Stack TechDegree - Unit 07 with TeamTreehouse. 
   
-  - The app will be deployed to: 
+  - The app has been deployed to: [Click Here!](https://zhaopeng-wang.herokuapp.com/)
   
 - Project Description:
   - For this project, 
