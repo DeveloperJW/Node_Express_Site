@@ -69,7 +69,13 @@ npm start
 Extra Credit:
 -
 - Set up your package.json file so that running npm start will run the app.
-    
+    - Installed opn-cli for cross platform browser open and start app.js     
 - Use error handling middleware to render a Pug template
     
 - Customize the style
+    - In public/css/foundation.css Changed the background color of body from white to #FAEBD7 which is a more friendly color
+    - In public/css/style.css Changed the font family from font-family: 'Merriweather', serif to font-family: 'Open Sans', sans-serif;
+    - Added Animate.css to the project and apply effects to h1 elements in each page;
+    add bounce effect when user hover on projects at front page
+    - Added logo to home page.
+    - Added website favicon

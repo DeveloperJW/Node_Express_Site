@@ -1,6 +1,7 @@
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-family: 'Open Sans', sans-serif;
 }
 
   h5{
@@ -148,3 +149,17 @@ a:hover{
 .portfolio-bio{
     line-height: 25px;
 }
+
+#logo {
+  margin: 10px auto 0 auto;
+  position: relative;
+  display:block;
+  /*max-width:183px;*/
+  max-width: 150px;
+}
+
+.showCase:hover{
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
+}
+

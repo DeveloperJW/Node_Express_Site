@@ -19,10 +19,18 @@ const projectRoutes=require('./routes/projects');
 app.use(mainRoutes);
 app.use('/projects', projectRoutes);
 
+/* Catch 404 Not Found error */
+app.use((req, res, next) => {
+    const err = new Error('Page Not Found');
+    err.status=404;
+    next(err);
+});
+
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
-    res.render('error');
+    res.render('error',{error:err});
+    next(err);
 });
 
 app.listen(3000, ()=>{

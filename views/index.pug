@@ -1,11 +1,12 @@
 extends layout.pug
 
-block content 
+block content
+    p#logo
+        img(src='/static/images/Logo.png')
     article.grid-container.portfolio-intro
         div
-
             //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together!
-            h1 Welcome to my Portfolio Website
+            h2.animated.lightSpeedIn.slower Welcome to My Portfolio
 
             //- Add a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc.
             p.lead.text-light
@@ -17,6 +18,6 @@ block content
             each project,index in projects
                 .cell
                     a(href=`/projects/${index}`)
-                        img.thumbnail(src=project.image_urls[0])
+                        img.thumbnail.showCase(src=project.image_urls[0])
                         h5=project.project_name
       
