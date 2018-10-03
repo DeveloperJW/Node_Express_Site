@@ -6,21 +6,16 @@ block content
     article.grid-container.portfolio-intro.portfolio-project
         .grid-x
             .cell.small-6.medium-9.large-9
-
                 h1.animated.tada.slower=title
-
                 p.lead.text-light
                     | #{description}
-
             .cell.portfolio-meta.small-6.medium-2.large-3
                 h6 Technologies
-
                 ul
                     each skill in technologies
                         li=skill
                 a.button.expanded(href=liveDemo target="_blank") Live Demo
                 a.button.expanded(href=githubRepo target="_blank") GitHub Repo
-
         each url,index in image_urls
-            if index>0
+            if index > 0
                 img.image(src=url)

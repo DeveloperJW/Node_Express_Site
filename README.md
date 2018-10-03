@@ -57,8 +57,8 @@ npm start
 
 ## Built With
 
-* [Node](http://www.dropwizard.io/1.0.2/docs/) - 
-* [Express](https://maven.apache.org/) - The web framework used
+* [Node](https://nodejs.org/en/) - 
+* [Express](http://expressjs.com/) - The web framework used
 
 
 ## Authors

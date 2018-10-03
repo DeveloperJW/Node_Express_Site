@@ -3,6 +3,7 @@ const bodyParser=require('body-parser');
 const cookieParser=require('cookie-parser');
 
 const app = express();
+const port = process.env.PORT || 3000;//set PORT for local dev and deployment
 
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cookieParser());
@@ -26,7 +27,8 @@ app.use((req, res, next) => {
     next(err);
 });
 
-/* add if statement to check if err occurs */
+/* add if statement to check if err occ
+urs */
 app.use((err, req, res, next) => {
     if (err){
         res.locals.error = err;
@@ -37,6 +39,6 @@ app.use((err, req, res, next) => {
 
 });
 
-app.listen(3000, ()=>{
-    console.log("The application is running on localhost:3000");
+app.listen(port, ()=>{
+    console.log("The application is running on localhost:"+port);
 });
